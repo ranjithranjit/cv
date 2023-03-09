@@ -47,7 +47,7 @@ function textBack(){
 }
 
 function fun(){
-    gsap.to(".alert", {opacity: 0, duration: 2})
+    gsap.to(".alert", {opacity: 0, duration: 2, display:none})
 }
 
 
