@@ -1,71 +1,116 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>RANJITH PERSONAL SITE</title>
-
-  </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVA SCRIPT</title>
+    <link rel="icon" href="icon.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Crimson+Text:wght@700&family=Lobster+Two&family=Montserrat:wght@200&family=Noto+Serif+Khojki&family=Sacramento&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js" integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+    <script src="app.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/Flip.min.js" integrity="sha512-RL2ypMFkOs/iB79bWnNiFrZRCqyExtQ38n/K+t7Xjf09YZcvSzqgSaGVj+fiVYEqVRLf/WjdHmwGImZM3XO5gA==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+    <link rel="stylesheet" href="styles.css">
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
 <body>
+     <nav class="nav">
+        <div class="nav-links">
+            <li onclick="text()" class="nav-item"><a class="fa fa-ils" href="#firstPage">Home</a></li>
+            <div class="line"></div>
+        </div>
+        <div class="nav-links">
+            <li onclick="text()" class="nav-item"><a class="fa fa-gg" href="#secondPage">Project</a>
+            </li>
+            
+        </div>
+        <div class="nav-links">
+            <li onclick="text()" class="nav-item"><a class="fa fa-money" href="#">PortFolio</a></li>
+            
+        </div>
+     </nav>
+     <section onclick="myfunction()" class="section" id="firstPage">
+        <div class="alert">
+            <h1 onclick="fun()" style="color: aliceblue;">
+                Please Tap Here
+            </h1>
+        </div>
+        <div class="container2">
+            <div onclick="text()" class="box-1">
+                <h1>Project 1</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A facilis eveniet in quis aperiam ad deserunt ex accusamus iste qui.</p>
+            </div>
+            <div onclick="text()" class="box-2">
+                <h1>Project 2</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A facilis eveniet in quis aperiam ad deserunt ex accusamus iste qui.</p>
+            </div>
+            <div onclick="text()" class="box-3">
+                <h1>Project 3
+                </h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, culpa deleniti! Labore, vero debitis et vel aperiam distinctio mollitia hic?</p>
+                
+            </div>
+            <div onclick="text()" class="box-4">
+                <h1>Project 4</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa veritatis exercitationem debitis consequatur quis dolore cum dolor</p>
+            </div>
 
-  <table cellspacing="20">
-    <tr>
-      <td><img src="ran-modified.png" width="200"height="200"alt="jjj"></td>
-      <td><h1>RANJITH</h1><p><em>Student of <a href="https://www.cietcbe.edu.in/"> CIET </a>. Studying <strong>BE-ECE</strong> 1st year</em></p>
-      <p>I am a student of the CIET college situated at Coimbatore</p>
-      </td>
-    </tr>
+        </div>
+     </section>
+     <section class="loader" id="loadPage">
+        <div class="container">
+            <h1 class="big-title">
+                <span class="text">Hey There</span>
+            </h1>
+      
+            <h1 class="big-title">
+                <span class="text">We Are Loading </span>
+            </h1>
+       
+            <h1 class="big-title">
+                <span class="text">For you....</span>
+            </h1>            
+        </div>
+        <div class="page"></div>
 
-  </table>
-  <hr>
-  <h3>EDUCATION</h3>
-  <Ul type="*">
-    <li>I HAVE COMPLETED MY DEGREE IN CIET ENGINEERING COLLEGE</li>
-    <li>I have completed my higher secondary in <a href="http://www.thaaicbse.com/">THAAI MATRICULATION HIGHER SECONDARY SCHOOL.</a></li>
-    <li>I have completed my SSLC  in <a href="http://www.thaaicbse.com/">THAAI MATRICULATION HIGER SECODARY SCHOOL.</a></li>
-    <li>Now I am Studying python bootamp in <a href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwiNl4612PX3AhV3k2YCHfLkBv4YABAEGgJzbQ&ae=2&ohost=www.google.com&cid=CAESbeD2GNxB4RYw4yxDqZLnrFJshOu9RYZB29PQv_2e1tzYL3m88595OR7ys4CK6QBMWctYGO_z9DyEoTDRfrRpMKZrsOhTTQGxtbqSeN8myn8-Q20LoRLrJ_xdGbR7zZSoYSZv5W6Yb8RH3y6AIiw&sig=AOD64_1oz8auc5NrdOr7gMBDJ138elASzw&q&adurl&ved=2ahUKEwiu8f602PX3AhUDU2wGHa47DCIQ0Qx6BAgFEAE">udemy</a>.</li>
+     </section >
+     <section class="kindof">
+        <div class="container">
+            <h1 class="big-title">
+                <span class="text1">We Night Mares</span>
+            </h1>
+            <div class="underLine1"></div>
+            <div class="underLine2"></div>
+        </div>
+     </section>
+    <section class="content-display">
+        <div>
 
-  </ul>
-  <hr>
-  <h3><a href="htpp.html">HOBBIES</a></h3><h3><a href="contact.html">contact_details</a></h3>
-  <table border="1">
-    <thead>
-      <tr>
-        <th>DATES</th>
-        <th>EDUCATION</th>
-      </tr>
-    </thead>
+            <h1>
+                <span>Sorry Work Is still Going on  😥</span>
+            </h1>
+            <button onclick="textBack()" type="submit" class="btn">
+                Go Back
+            </button>
+        </div>
 
-  <tbody>
-    <tr>
-      <td>2019 - 2020</td>
-      <td>Student of THAAI</td>
-    </tr>
-    <tr>
-      <td>2020 - 2021</td>
-      <td>Student of THAAI</td>
-    </tr>
-  </tbody>
- </table>
-<table cellspacing="10">
-  <tr>
+    </section>
 
-    <td><h2>SKILLS</h2></td>
-  </tr>
-  <h3>
-  <tr>
-    <td>Drawing</td>
-    <td>⭐⭐⭐⭐⭐</td>
-  </tr>
-  <tr>
-    <td>Communication</td>
-    <td>⭐⭐⭐⭐</td>
-  </tr>
-  <tr>
-    <td>Python</td>
-    <td>⭐⭐⭐</td>
-  </h3>
-  </tr>
-</table>
 
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js" 
+            integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ==" 
+            crossorigin="anonymous" 
+            referrerpolicy="no-referrer">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/Flip.min.js" 
+            integrity="sha512-RL2ypMFkOs/iB79bWnNiFrZRCqyExtQ38n/K+t7Xjf09YZcvSzqgSaGVj+fiVYEqVRLf/WjdHmwGImZM3XO5gA==" 
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer">
+    </script>
 </body>
 </html>
